@@ -78,3 +78,9 @@ class Place(BaseModel, Base):
                 if amenity.place_id == self.id:
                     amenity_list.append(amenity)
             return amenity_list
+Place
+            '''
+            if amenity:
+                for amenity in models.storage.all(Amenity).values():
+                    if amenity.place_id == self.id:
+                        amenity_ids.append(amenity)
